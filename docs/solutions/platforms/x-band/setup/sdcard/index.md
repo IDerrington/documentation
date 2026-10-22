@@ -214,15 +214,15 @@ BOOT/
 
 4. **Verify the Kuiper image**:
 
-   Kuiper 2 copies the configuration used to build the image to `/config`. Its
-   presence confirms a Kuiper 2 image, and it records exactly which options the
-   image was built with:
+   Every Kuiper 2 image records its version in `/etc/kuiper-release`, and the
+   options it was built with in `/config`:
    ```bash
-   root@analog:~# cat /config
+   root@analog:~# . /etc/kuiper-release && echo "$KUIPER_VERSION ($KUIPER_ARCH/$KUIPER_VARIANT)"
    ```
-   - Confirm the recorded options match the release you downloaded
-   - If `/config` is missing, the card holds a deprecated Kuiper 1 image and
-     must be reflashed — see
+   - Confirm the version, architecture (`arm64`) and variant (`full`) match the
+     release you downloaded
+   - If `/etc/kuiper-release` is missing, the card holds a deprecated Kuiper 1
+     image and must be reflashed — see
      {external+kuiper:ref}`checking-your-kuiper-version`
 
    ```{image} xbdp_sd_card_image_verification.png

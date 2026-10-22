@@ -117,7 +117,7 @@ Checksums will NOT match between different firmware builds or software versions.
 | Symptom | Possible Cause | Solution |
 |---------|---------------|----------|
 | No transitions seen on TR probe point | TDD not enabled or driver not loaded | Run `iio_attr -c axi-core-tdd enable`; check `lsmod \| grep tdd` |
-| IIO TDD device not found | Kuiper release too old | TDD support requires Kuiper 2026.1.0 or newer; verify with `cat /config` and reflash if needed (see {ref}`SD Card Configuration <x-band-sdcard>`) |
+| IIO TDD device not found | Kuiper release too old | TDD support requires Kuiper 2026.1.0 or newer; verify with `cat /etc/kuiper-release` and reflash if needed (see {ref}`SD Card Configuration <x-band-sdcard>`) |
 | IIO TDD device not found | Bitstream doesn't include TDD core | Confirm FPGA bitstream and device tree include the TDD core |
 | Measured timing doesn't match configuration | Wrong units or unstable clock | Verify system clock frequency; check µs vs. clock-cycle unit settings |
 | TX leakage visible during RX window | Guard time too short | Increase guard time between TX and RX windows |
