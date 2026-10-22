@@ -35,7 +35,7 @@ Verify you have received all components before beginning assembly:
 
 *Additional Hardware*
 - **microSD Card** - 16GB minimum, flashed with Kuiper Linux 2026.1.0 or newer
-  (see {ref}`SD Card Configuration <x-band-sdcard>`; a card shipped with an
+  (see {ref}`x-band-sdcard`; a card shipped with an
   older image must be reflashed)
 - **Mounting Hardware** - Standoffs, screws, spacers (if provided)
 

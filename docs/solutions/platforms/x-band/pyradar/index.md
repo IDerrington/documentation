@@ -51,7 +51,7 @@ Follow these steps to configure your PC and hardware for pyRadar operation.
 
 Prepare your SD card with the Kuiper Linux operating system:
 
-**See**: {ref}`SD Card Configuration Guide <x-band-sdcard>` for complete instructions on:
+**See**: {ref}`x-band-sdcard` for complete instructions on:
 - Downloading ADI Kuiper Linux
 - Formatting the SD card
 - Flashing the image using Balena Etcher
@@ -59,7 +59,7 @@ Prepare your SD card with the Kuiper Linux operating system:
 
 ```{important}
 Use **ADI Kuiper Linux 2026.1.0 or newer** (ARM 64-bit Full variant), available
-from [ADI Kuiper releases](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads).
+from the Kuiper {external+kuiper:ref}`releases-downloads` page.
 pyRadar drives the TDD engine for FMCW chirp timing, and 2026.1.0 is the first
 public release that supports it. Earlier releases will fail to initialize the
 TDD controller.
@@ -613,14 +613,14 @@ The custom ADAR1000 driver is required for proper phased-array beamforming on th
 ## Additional Resources
 
 ### Documentation
-- {external+pyadi-iio:doc}`pyadi-iio Documentation <index>` - Python IIO library reference
+- {external+pyadi-iio:doc}`index` - Python IIO library reference
 - {adi}`AD9081 Product Page <en/products/ad9081.html>` - MxFE datasheet and resources
 - {adi}`ADAR1000 Product Page <en/products/adar1000.html>` - Beamformer documentation
-- {ref}`Kuiper Linux Documentation <kuiper>` - Linux image documentation
-- [ADI Kuiper releases and downloads](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads) - Release 2026.1.0 or newer is required for TDD support
+- {ref}`kuiper` - Linux image documentation
+- {external+kuiper:ref}`releases-downloads` - Release 2026.1.0 or newer is required for TDD support
 
 ### Tools and Software
-- {ref}`IIO Oscilloscope <iio-oscilloscope>` - Real-time IIO device visualization
+- {ref}`iio-oscilloscope` - Real-time IIO device visualization
 - {adi}`Genalyzer <en/design-center/evaluation-hardware-and-software/evaluation-development-platforms/genalyzer.html>` - Signal analysis library
 
 ### Contact and Support
@@ -639,8 +639,8 @@ FMCWScan Pilot <fmcwscan/index>
 ```
 
 ```{seealso}
-- {ref}`Hardware Assembly Guide <x-band-assembly>` - X-Band platform assembly instructions
-- {ref}`EEPROM Programming <x-band-eeprom>` - FMC EEPROM setup for VADJ
-- {ref}`SD Card Configuration <x-band-sdcard>` - Kuiper Linux SD card preparation
-- {ref}`ZCU102 Configuration <x-band-zcu102config>` - ZCU102 boot and network setup
+- {ref}`x-band-assembly` - X-Band platform assembly instructions
+- {ref}`x-band-eeprom` - FMC EEPROM setup for VADJ
+- {ref}`x-band-sdcard` - Kuiper Linux SD card preparation
+- {ref}`x-band-zcu102config` - ZCU102 boot and network setup
 ```

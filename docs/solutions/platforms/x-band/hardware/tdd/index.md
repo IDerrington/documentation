@@ -7,8 +7,8 @@ The X-Band platform implements Time Division Duplexing (TDD) through a TDD IP Co
 newer**, the first public release that supports `axi-core-tdd`. On earlier
 public releases the TDD IIO device does not appear and TX/RX switching cannot be
 configured. Download the ARM 64-bit Full image from
-[ADI Kuiper releases](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads),
-then follow {ref}`SD Card Configuration <x-band-sdcard>`.
+the Kuiper {external+kuiper:ref}`releases-downloads` page,
+then follow {ref}`x-band-sdcard`.
 ```
 
 **TDD Components:**

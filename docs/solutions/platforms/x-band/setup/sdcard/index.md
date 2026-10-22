@@ -11,7 +11,7 @@ Before starting, ensure you have:
 - **SD Card Formatter**: [Download from SD Association](https://www.sdcard.org/downloads/formatter/)
 - **BalenaEtcher**: [Download from balena.io](https://www.balena.io/etcher/)
 - **ADI Kuiper Linux Image**: release **2026.1.0** or newer, **ARM 64-bit Full**
-  variant — [download from ADI Kuiper releases](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads)
+  variant — download it from {external+kuiper:ref}`releases-downloads`
 - **SD Card Reader**: USB or built-in card reader
 - **Host Computer**: Windows, Mac, or Linux
 
@@ -20,14 +20,14 @@ Before starting, ensure you have:
 public Kuiper release that supports the TDD engine (`axi-core-tdd`), which the
 X-Band platform uses for TX/RX switching — earlier public releases do not
 include it. Download it from
-[ADI Kuiper releases](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads).
+the Kuiper {external+kuiper:ref}`releases-downloads` page.
 ```
 
 ```{note}
 The ZCU102 is a Zynq UltraScale+ (`zynqmp`) carrier, so it requires the
 **ARM 64-bit** image. Choose the **Full** edition — it includes the ADI
 software stack (libiio, pyadi-iio) and the FRU tools used for
-{ref}`EEPROM Programming <x-band-eeprom>`.
+{ref}`x-band-eeprom`.
 ```
 
 ## Step 1: Format the SD Card
@@ -178,7 +178,7 @@ BOOT/
 1. **Power down the X-Band platform** completely
 2. **Remove any existing SD Card** from the ZCU102
 3. **Insert the newly programmed SD Card** into the ZCU102 SD card slot
-4. **Ensure ZCU102 is configured for SD boot** (see {ref}`ZCU102 Configuration <x-band-zcu102config>`)
+4. **Ensure ZCU102 is configured for SD boot** (see {ref}`x-band-zcu102config`)
 
 ### First Boot
 
@@ -249,13 +249,13 @@ Boot is confirmed successful when **40 IIO devices** appear in the terminal **an
 
 - [SD Association - SD Card Formatter](https://www.sdcard.org/downloads/formatter/)
 - [BalenaEtcher Download](https://www.balena.io/etcher/)
-- [ADI Kuiper releases and downloads](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads) - Get release 2026.1.0 or newer
-- {external+kuiper:ref}`Writing a Kuiper image to an SD card <use-kuiper-image-writing>`
-- {ref}`ADI Kuiper Linux Images <kuiper>`
+- {external+kuiper:ref}`releases-downloads` - Get release 2026.1.0 or newer
+- {external+kuiper:ref}`use-kuiper-image-writing`
+- {ref}`kuiper`
 - {xilinx}`ZCU102 Documentation <products/boards-and-kits/ek-u1-zcu102-g.html>`
 
 ```{seealso}
-- {ref}`ZCU102 Configuration <x-band-zcu102config>` - Configure boot mode and peripherals
-- {ref}`EEPROM Programming <x-band-eeprom>` - Program FMC EEPROM for proper VADJ
-- {ref}`Assembly Guide <x-band-assembly>` - Complete hardware assembly instructions
+- {ref}`x-band-zcu102config` - Configure boot mode and peripherals
+- {ref}`x-band-eeprom` - Program FMC EEPROM for proper VADJ
+- {ref}`x-band-assembly` - Complete hardware assembly instructions
 ```
