@@ -29,7 +29,9 @@ Before programming the EEPROM, ensure:
    - ADXUD1AEBZ interposer installed
 2. **Network or UART connection** to ZCU102
 3. **Root access** to the Linux system
-4. **FRU tools** installed (included in Kuiper Linux)
+4. **FRU tools** installed — included in the Kuiper Linux **Full** edition
+   (the Basic edition does not ship them; see
+   {ref}`SD Card Configuration <x-band-sdcard>`)
 
 ## EEPROM Programming Procedure
 

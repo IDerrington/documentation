@@ -60,7 +60,10 @@ The X-Band platform requires several configuration steps before first use. Each 
 
 ### SD Card Setup
 
-Prepare the SD card with ADI Kuiper Linux operating system.
+Prepare the SD card with ADI Kuiper Linux operating system. The X-Band platform
+requires **release 2026.1.0 or newer** (ARM 64-bit Full), available from
+[ADI Kuiper releases](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads)
+— it is the first public release that supports the TDD engine.
 
 **Steps Include:**
 - Format SD card properly
@@ -101,7 +104,7 @@ Program the FMC EEPROM on the ADXUD1AEBZ interposer board.
 |-----------|---------------|-------|
 | **ZCU102 Boot Mode** | SW6: ON-OFF-OFF-OFF | [ZCU102 Config](zcu102config/index.md) |
 | **USB Host Mode** | J7, J109-113 configured | [ZCU102 Config](zcu102config/index.md) |
-| **SD Card** | Kuiper Linux + boot files | [SD Card Guide](sdcard/index.md) |
+| **SD Card** | Kuiper Linux 2026.1.0+ (ARM 64-bit Full) + boot files | [SD Card Guide](sdcard/index.md) |
 | **FMC EEPROM** | Programmed for VADJ | [EEPROM Guide](eeprom/index.md) |
 | **UART Console** | 115200 baud, 8N1 | [ZCU102 Config](zcu102config/index.md) |
 

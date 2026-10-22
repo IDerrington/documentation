@@ -35,7 +35,7 @@ Follow these steps to configure your PC and hardware for pyRadar operation.
 
 **Hardware Requirements**:
 - X-Band Development Kit with ZCU102, AD9081, XUD1A, and ADAR1000 boards
-- 16 GB SD card for Kuiper Linux
+- 16 GB SD card for Kuiper Linux (release **2026.1.0** or newer)
 - USB to UART cable (included with ZCU102)
 - Ethernet connection (direct or USB-to-Ethernet adapter)
 - 12V DC power supplies
@@ -56,6 +56,14 @@ Prepare your SD card with the Kuiper Linux operating system:
 - Formatting the SD card
 - Flashing the image using Balena Etcher
 - Verifying the installation
+
+```{important}
+Use **ADI Kuiper Linux 2026.1.0 or newer** (ARM 64-bit Full variant), available
+from [ADI Kuiper releases](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads).
+pyRadar drives the TDD engine for FMCW chirp timing, and 2026.1.0 is the first
+public release that supports it. Earlier releases will fail to initialize the
+TDD controller.
+```
 
 ```{note}
 Kuiper Linux includes pre-installed ADI tools and drivers required for the X-Band platform.
@@ -609,6 +617,7 @@ The custom ADAR1000 driver is required for proper phased-array beamforming on th
 - {adi}`AD9081 Product Page <en/products/ad9081.html>` - MxFE datasheet and resources
 - {adi}`ADAR1000 Product Page <en/products/adar1000.html>` - Beamformer documentation
 - {ref}`Kuiper Linux Documentation <kuiper>` - Linux image documentation
+- [ADI Kuiper releases and downloads](https://developer.analog.com/docs/adi-kuiper/releases/#releases-downloads) - Release 2026.1.0 or newer is required for TDD support
 
 ### Tools and Software
 - {ref}`IIO Oscilloscope <iio-oscilloscope>` - Real-time IIO device visualization
